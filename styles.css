@@ -1,0 +1,212 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+:root {
+    /* Primary  */
+    --pale-blue: hsl(225, 100%, 94%); 
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral  */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%); 
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: var(--desaturated-blue);
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--very-pale-blue);
+    width: 327px;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.body {
+    padding: 2rem 1.5rem;
+}
+
+.body__sumary {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.body__sumary h1 {
+    font-size: 1.375rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;  
+}
+
+.body__sumary p {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+
+}
+
+.card__body--plan {
+    background: hsla(225, 100%, 94%, 0.25);
+    padding: 1.125rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+}
+
+.card__body--plan img {
+    margin-right: 1rem;
+}
+
+.card__body--plan .plan-type p:first-child {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.card__body--plan .plan-type p:last-child {
+    font-size: 0.9375rem;
+    text-align: center;
+}
+
+.card__body--plan  a {
+    width: 100%;
+    color: var(--bright-blue);
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.card__body--plan a:hover {
+    color: hsla(245, 75%, 52%, .75);
+    text-decoration: none;
+}
+
+.card__buttons {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.card__buttons button {    
+    color: var(--very-pale-blue);
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.card__buttons button:first-child:hover {
+    background-color: hsla(245, 75%, 52%, .75);
+}
+
+.card__buttons a {
+    background-color: var(--very-pale-blue);
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    display: inherit;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.card__buttons a:last-child:hover {
+    color: var(--dark-blue);
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 0 auto;
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+    .card {
+        width: 450px;
+    }
+    .body {
+        padding: 3rem;
+    }
+    .body__sumary {
+        padding: 0 1.625rem;
+    }
+    .card__body--plan {
+        padding: 1.25rem 1.625rem;
+    }
+}
+
+.attribution {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--bright-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    color: hsla(245, 75%, 52%, .75);
+}
