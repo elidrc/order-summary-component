@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-j7hZ0J-MF3)
-- Live Site URL: [See Live Site](https://elidrc.github.io/nft-preview-card-component/)
+- Solution URL: [See Solution](https://www.frontendmentor.io/solutions/order-summary-component-AwgULk9Ch4)
+- Live Site URL: [See Live Site](https://elidrc.github.io/order-summary-component/)
 
 ## My process
 
